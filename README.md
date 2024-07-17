@@ -55,7 +55,7 @@ make test-quicksort
 
 ## Stack
 
-Run all tests for stack algorithm
+Run all tests for stack algorithm.
 
 ```sh
 make test-stack
@@ -64,7 +64,7 @@ make test-stack
 
 ## Reverse
 
-Run all tests for reverse algorithm
+Run all tests for reverse algorithm.
 
 ```sh
 make test-reverse
