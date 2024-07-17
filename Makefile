@@ -18,7 +18,7 @@ test-quicksort:
 	@echo executing quicksort tests
 	@go test -v quicksort_test.go quicksort.go
 
-test-revese-string:
+test-reverse-string:
 	@echo executing reverse string tests
 	@go test -v reverse_string_test.go reverse_string.go
 
