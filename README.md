@@ -77,9 +77,7 @@ This repository is written in Go, so it includes a go.mod locking the version
 to 1.22.3. A Makefile is also used, so installing a version of make will be 
 necessary as well.
 
-- [ ] Go 1.22.3
-
-    [Download and Install](https://go.dev/dl/) the binary or install via your 
+- [ ] Go 1.22.3 - [Download and Install](https://go.dev/dl/) the binary or install via your 
     favorite package manager
 
 - [ ] make
