@@ -23,28 +23,51 @@ make
 Run all or individual sort tests.
 
 ### All
+
 ```sh
 make test-sorts
 ```
 
 ### Heapsort
+
 ```sh
 make test-heapsort
 ```
 
 ### Insertionsort
+
 ```sh
 make test-insertionsort
 ```
 
 ### Mergesort
+
 ```sh
 make test-mergesort
 ```
 
 ### Quicksort
+
 ```sh
 make test-quicksort
+```
+
+
+## Stack
+
+Run all tests for stack algorithm
+
+```sh
+make test-stack
+```
+
+
+## Reverse
+
+Run all tests for reverse algorithm
+
+```sh
+make test-reverse
 ```
 
 

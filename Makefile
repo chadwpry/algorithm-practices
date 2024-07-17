@@ -1,4 +1,4 @@
-all: test-sorts
+all: test-sorts test-stack
 
 test-sorts: test-heapsort test-insertionsort test-mergesort test-quicksort
 
@@ -17,3 +17,11 @@ test-mergesort:
 test-quicksort:
 	@echo executing quicksort tests
 	@go test -v quicksort_test.go quicksort.go
+
+test-revese-string:
+	@echo executing reverse string tests
+	@go test -v reverse_string_test.go reverse_string.go
+
+test-stack:
+	@echo executing stack tests
+	@go test -v stack_test.go stack.go
