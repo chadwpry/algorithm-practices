@@ -16,6 +16,10 @@ test-leetcode-00134:
 	@echo executing leetcode 00134 gas station tests
 	@go test lc/00134_gas_station_test.go lc/00134_gas_station.go
 
+test-leetcode-00135:
+	@echo executing leetcode 00135 candy tests
+	@go test lc/00135_candy_test.go lc/00135_candy.go
+
 test-mergesort:
 	@echo executing mergesort tests
 	@go test mergesort_test.go mergesort.go
