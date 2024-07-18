@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestCase1(t *testing.T) {
+func TestCandyCase1(t *testing.T) {
 	ratings := []int{1, 0, 2}
 
 	result := Candy(ratings)
@@ -15,7 +15,7 @@ func TestCase1(t *testing.T) {
 	}
 }
 
-func TestCase2(t *testing.T) {
+func TestCandyCase2(t *testing.T) {
 	ratings := []int{1, 2, 2}
 
 	result := Candy(ratings)

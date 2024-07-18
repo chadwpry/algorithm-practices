@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestCase1(t *testing.T) {
+func TestGasStationCase1(t *testing.T) {
 	gas := []int{1, 2, 3, 4, 5}
 	cost := []int{3, 4, 5, 1, 2}
 
@@ -16,7 +16,7 @@ func TestCase1(t *testing.T) {
 	}
 }
 
-func TestCase2(t *testing.T) {
+func TestGasStationCase2(t *testing.T) {
 	gas := []int{2, 3, 4}
 	cost := []int{3, 4, 3}
 
@@ -28,7 +28,7 @@ func TestCase2(t *testing.T) {
 	}
 }
 
-func TestCase3(t *testing.T) {
+func TestGasStationCase3(t *testing.T) {
 	gas := []int{5, 1, 2, 3, 4}
 	cost := []int{4, 4, 1, 5, 1}
 

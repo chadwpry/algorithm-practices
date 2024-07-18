@@ -48,4 +48,5 @@ Constraints:
 package algorithms
 
 func CanCompleteCircuit(gas, cost []int) int {
+	return -1
 }
