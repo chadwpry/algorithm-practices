@@ -12,6 +12,10 @@ test-insertionsort:
 	@echo executing insertionsort tests
 	@go test insertionsort_test.go insertionsort.go
 
+test-leetcode-00134:
+	@echo executing leetcode 00134 gas station tests
+	@go test lc/00134_gas_station_test.go lc/00134_gas_station.go
+
 test-mergesort:
 	@echo executing mergesort tests
 	@go test mergesort_test.go mergesort.go
