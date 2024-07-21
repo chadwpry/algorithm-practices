@@ -17,6 +17,28 @@ make
 ```
 
 
+## Greedy
+
+Run greedy algorithms associated with challenge platforms
+
+### Gas Station
+
+```sh
+make test-leetcode-00134
+```
+
+### Candy
+
+```sh
+make test-leetcode-00135
+```
+
+### Remove K Digits
+
+```sh
+make test-leetcode-00402
+```
+
 
 ## Sorts
 

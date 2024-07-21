@@ -20,6 +20,10 @@ test-leetcode-00135:
 	@echo executing leetcode 00135 candy tests
 	@go test lc/00135_candy_test.go lc/00135_candy.go
 
+test-leetcode-00402:
+	@echo executing leetcode 00402 remove k digits tests
+	@go test lc/00402_remove_k_digits_test.go lc/00402_remove_k_digits.go
+
 test-mergesort:
 	@echo executing mergesort tests
 	@go test mergesort_test.go mergesort.go
