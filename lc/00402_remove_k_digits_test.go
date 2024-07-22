@@ -75,3 +75,15 @@ func TestRemoveKDigitsCase6(t *testing.T) {
 		t.Fatalf("failed with num: %v k: %v expected: %v result was %v\n", num, k, expected, result)
 	}
 }
+
+func TestRemoveKDigitsCase7(t *testing.T) {
+	num := "12345"
+	k := 2
+
+	result := RemoveKDigits(num, k)
+	expected := "145"
+
+	if result != expected {
+		t.Fatalf("failed with num: %v k: %v expected: %v result was %v\n", num, k, expected, result)
+	}
+}
