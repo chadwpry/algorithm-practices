@@ -1,3 +1,38 @@
+usage:
+	@echo The following algorithm practice challenges are available. After
+	@echo adding an implementation for the challenge, execute the associated test
+	@echo command listed below it.
+	@echo
+	@tput setaf 2; echo Heapsort; tput sgr0
+	@echo make test-heapsort
+	@echo
+	@tput setaf 2; echo Insertion Sort; tput sgr0
+	@echo make test-insertionsort
+	@echo
+	@tput setaf 2; echo Merge Sort; tput sgr0
+	@echo make test-mergesort
+	@echo
+	@tput setaf 2; echo Quick Sort; tput sgr0
+	@echo make test-quicksort
+	@echo
+	@tput setaf 2; echo Reversing A String; tput sgr0
+	@echo make test-reverse-string
+	@echo
+	@tput setaf 2; echo Creating A Stack; tput sgr0
+	@echo make test-stack
+	@echo
+	@tput setaf 2; echo Gas Station Starting Index; tput sgr0
+	@echo make test-leetcode-00134
+	@echo
+	@tput setaf 2; echo Candy Distribution; tput sgr0
+	@echo make test-leetcode-00135
+	@echo
+	@tput setaf 2; echo Wiggle Subsequence; tput sgr0
+	@echo make test-leetcode-00376
+	@echo
+	@tput setaf 2; echo Remove K Digits; tput sgr0
+	@echo make test-leetcode-00402
+
 all: test-reverse-string test-sorts test-stack
 
 test-countingsort:
