@@ -27,6 +27,9 @@ usage:
 	@tput setaf 2; echo Candy Distribution; tput sgr0
 	@echo make test-leetcode-00135
 	@echo
+	@tput setaf 2; echo Perfect Squares; tput sgr0
+	@echo make test-leetcode-00279
+	@echo
 	@tput setaf 2; echo Wiggle Subsequence; tput sgr0
 	@echo make test-leetcode-00376
 	@echo
@@ -54,6 +57,10 @@ test-leetcode-00134:
 test-leetcode-00135:
 	@echo executing leetcode 00135 candy tests
 	@go test -v lc/00135_candy_test.go lc/00135_candy.go
+
+test-leetcode-00279:
+	@echo executing leetcode 00279 perfect squares
+	@go test -v lc/00279_perfect_squares_test.go lc/00279_perfect_squares.go
 
 test-leetcode-00376:
 	@echo executing leetcode 00376 wiggle subsequence tests
