@@ -12,6 +12,6 @@ func TestMergesortAscending(t *testing.T) {
 	sorted := Mergesort(input)
 
 	if reflect.DeepEqual(sorted, expected) == false {
-		t.Fatalf("failed to insertionsort in an ascending order: %v\n", sorted)
+		t.Fatalf("failed to mergesort in an ascending order: %v\n", sorted)
 	}
 }
