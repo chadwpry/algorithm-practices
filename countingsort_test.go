@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCOuntingsortAscending(t *testing.T) {
+func TestCountingsortAscending(t *testing.T) {
 	input := []int{1, 5, 5, 2, 8, 7, 9, 1, 4, 2, 6}
 	expected := []int{1, 1, 2, 2, 4, 5, 5, 6, 7, 8, 9}
 
