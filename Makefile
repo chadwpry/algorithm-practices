@@ -35,6 +35,9 @@ usage:
 	@echo
 	@tput setaf 2; echo Remove K Digits; tput sgr0
 	@echo make test-leetcode-00402
+	@echo
+	@tput setaf 2; echo Can Place Flowers; tput sgr0
+	@echo make test-leetcode-00605
 
 all: test-reverse-string test-sorts test-stack
 
@@ -69,6 +72,10 @@ test-leetcode-00376:
 test-leetcode-00402:
 	@echo executing leetcode 00402 remove k digits tests
 	@go test -v lc/00402_remove_k_digits_test.go lc/00402_remove_k_digits.go
+
+test-leetcode-00605:
+	@echo executing leetcode 00605 can place flowers tests
+	@go test -v lc/00605_can_place_flowers_test.go lc/00605_can_place_flowers.go
 
 test-mergesort:
 	@echo executing mergesort tests
