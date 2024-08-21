@@ -21,6 +21,9 @@ usage:
 	@tput setaf 2; echo Creating A Stack; tput sgr0
 	@echo make test-stack
 	@echo
+	@tput setaf 2; echo Reverse Integer; tput sgr0
+	@echo make test-leetcode-00007
+	@echo
 	@tput setaf 2; echo Gas Station Starting Index; tput sgr0
 	@echo make test-leetcode-00134
 	@echo
@@ -52,6 +55,10 @@ test-heapsort:
 test-insertionsort:
 	@echo executing insertionsort tests
 	@go test -v insertionsort_test.go insertionsort.go
+
+test-leetcode-00007:
+	@echo executing leetcode 00007 reverse integer
+	@go test -v lc/00007_reverse_integer_test.go lc/00007_reverse_integer.go
 
 test-leetcode-00134:
 	@echo executing leetcode 00134 gas station tests
