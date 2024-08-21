@@ -28,44 +28,5 @@ Constraints:
 package algorithms
 
 func CanPlaceFlowers(flowerbed []int, n int) bool {
-	available := 0
-
-	k, j := 0, len(flowerbed)-1
-
-	if k == j-1 {
-		return flowerbed[k] == 0 && flowerbed[j] == 0
-	}
-
-	for i := k; i <= j; i++ {
-		var plots []int
-
-		switch i {
-		case k:
-			plots = flowerbed[i : i+1]
-		case j:
-			plots = flowerbed[i-1 : i+1]
-		default:
-			plots = flowerbed[i-1 : i+2]
-		}
-
-		if canPlace(plots) {
-			available++
-
-			if i < j {
-				i++
-			}
-		}
-	}
-
-	return available >= n
-}
-
-func canPlace(plots []int) bool {
-	for i := range len(plots) {
-		if plots[i] == 1 {
-			return false
-		}
-	}
-
-	return true
+	return false
 }
