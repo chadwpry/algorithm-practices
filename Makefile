@@ -24,6 +24,9 @@ usage:
 	@tput setaf 2; echo Reverse Integer; tput sgr0
 	@echo make test-leetcode-00007
 	@echo
+	@tput setaf 2; echo Rotate Image; tput sgr0
+	@echo make test-leetcode-00048
+	@echo
 	@tput setaf 2; echo Gas Station Starting Index; tput sgr0
 	@echo make test-leetcode-00134
 	@echo
@@ -59,6 +62,10 @@ test-insertionsort:
 test-leetcode-00007:
 	@echo executing leetcode 00007 reverse integer
 	@go test -v lc/00007_reverse_integer_test.go lc/00007_reverse_integer.go
+
+test-leetcode-00048:
+	@echo executing leetcode 00048 rotate image
+	@go test -v lc/00048_rotate_image_test.go lc/00048_rotate_image.go
 
 test-leetcode-00134:
 	@echo executing leetcode 00134 gas station tests
