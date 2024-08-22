@@ -36,3 +36,25 @@ func TestReverseIntegerCase3(t *testing.T) {
 		t.Fatalf("failed to pass test case with\nx: %v expected: %v, result: %v\n", x, expected, result)
 	}
 }
+
+func TestReverseIntegerCase4(t *testing.T) {
+	x := 10
+
+	result := ReverseInteger(x)
+	expected := 1
+
+	if result != expected {
+		t.Fatalf("failed to pass test case with\nx: %v expected: %v, result: %v\n", x, expected, result)
+	}
+}
+
+func TestReverseIntegerCase5(t *testing.T) {
+	x := 1534236469
+
+	result := ReverseInteger(x)
+	expected := 0
+
+	if result != expected {
+		t.Fatalf("failed to pass test case with\nx: %v expected: %v, result: %v\n", x, expected, result)
+	}
+}
