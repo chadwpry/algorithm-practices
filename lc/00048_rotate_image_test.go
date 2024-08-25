@@ -19,12 +19,29 @@ func TestRotateImageCase1(t *testing.T) {
 		{9, 6, 3},
 	}
 
-	if reflect.DeepEqual(matrix, expected) {
+	if reflect.DeepEqual(matrix, expected) == false {
 		t.Fatalf("failed to pass test case with\nmatrix: %v expected: %v\n", matrix, expected)
 	}
 }
 
 func TestRotateImageCase2(t *testing.T) {
+	matrix := [][]int{
+		{4, 8},
+		{3, 6},
+	}
+
+	RotateImage(matrix)
+	expected := [][]int{
+		{3, 4},
+		{6, 8},
+	}
+
+	if reflect.DeepEqual(matrix, expected) == false {
+		t.Fatalf("failed to pass test case with\nmatrix: %v expected: %v\n", matrix, expected)
+	}
+}
+
+func TestRotateImageCase3(t *testing.T) {
 	matrix := [][]int{
 		{5, 1, 9, 11},
 		{2, 4, 8, 10},
@@ -40,7 +57,7 @@ func TestRotateImageCase2(t *testing.T) {
 		{16, 7, 10, 11},
 	}
 
-	if reflect.DeepEqual(matrix, expected) {
+	if reflect.DeepEqual(matrix, expected) == false {
 		t.Fatalf("failed to pass test case with\nmatrix: %v expected: %v\n", matrix, expected)
 	}
 }
