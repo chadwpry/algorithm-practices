@@ -1,96 +1,62 @@
 # Algorithm-practice
 
-This repository has been created using the programming language Go. It is for 
-helping with algorithm practice skills. It includes a grouping of algorithm 
-tests that can be run directly via Makefile actions. How the algorithms are 
-implemented is up to you.
+This repository has been created using the programming language Go. Its goal
+is to help in practicing algorithm skills. It includes algorithm tests that 
+can be run directly via Makefile actions. How the algorithms are implemented 
+is up to you.
 
 Enjoy!
 
 
-# Tests
+## Leetcode
 
-Run all practice tests.
+Run leetcode tests for for sorts algorithm practices.
 
-```sh
-make
-```
+| Practice                                                                                                       | Test Command             |
+| :---                                                                                                           |                     ---: |
+| [Reverse Integer](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00007_reverse_integer.go)       | make test-leetcode-00007 |
+| [Rotate Image](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00048_rotate_image.go)             | make test-leetcode-00048 |
+| [Gas Station](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00134_gas_station.go)               | make test-leetcode-00134 |
+| [Candy](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00135_candy.go)                           | make test-leetcode-00135 |
+| [Perfect Squares](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00279_perfect_squares.go)       | make test-leetcode-00279 |
+| [Wiggle Subsequence](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00376_wiggle_subsequence.go) | make test-leetcode-00376 |
+| [Remove K Digits](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00402_remove_k_digits.go)       | make test-leetcode-00402 |
+| [Can Place Flowers](https://github.com/chadwpry/algorithm-practices/blob/main/lc/00605_can_place_flowers.go)   | make test-leetcode-00605 |
 
 
-## Greedy
+## Reverse
 
-Run greedy algorithms associated with challenge platforms
+Run tests for reverse algorithm practices.
 
-### Gas Station
-
-```sh
-make test-leetcode-00134
-```
-
-### Candy
-
-```sh
-make test-leetcode-00135
-```
-
-### Remove K Digits
-
-```sh
-make test-leetcode-00402
-```
+| Practice                                                                                                       | Test Command             |
+| :---                                                                                                           |                     ---: |
+| [Reverse String](https://github.com/chadwpry/algorithm-practices/blob/main/reverse_string.go)                  | make test-reverse-string |
 
 
 ## Sorts
 
-Run all or individual sort tests.
-
-### All
+Run all or individual tests for sort algorithm practices.
 
 ```sh
 make test-sorts
 ```
 
-### Heapsort
-
-```sh
-make test-heapsort
-```
-
-### Insertionsort
-
-```sh
-make test-insertionsort
-```
-
-### Mergesort
-
-```sh
-make test-mergesort
-```
-
-### Quicksort
-
-```sh
-make test-quicksort
-```
+| Practice                                                                                                       | Test Command             |
+| :---                                                                                                           |                     ---: |
+| [Countingsort](https://github.com/chadwpry/algorithm-practices/blob/main/sorts/countingsort.go)                | make test-countsorting   |
+| [Heapsort](https://github.com/chadwpry/algorithm-practices/blob/main/sorts/heapsort.go)                        | make test-heapsort       |
+| [Insertionsort](https://github.com/chadwpry/algorithm-practices/blob/main/sorts/insertionsort.go)              | make test-insertionsort  |
+| [Mergesort](https://github.com/chadwpry/algorithm-practices/blob/main/sorts/mergesort.go)                      | make test-mergesort      |
+| [Quicksort](https://github.com/chadwpry/algorithm-practices/blob/main/sorts/quicksort.go)                      | make test-quicksort      |
 
 
 ## Stack
 
-Run all tests for stack algorithm.
+Run tests for stack algorithm practices.
 
-```sh
-make test-stack
-```
-
-
-## Reverse
-
-Run all tests for reverse algorithm.
-
-```sh
-make test-reverse
-```
+| Practice                                                                                                       | Test Command             |
+| :---                                                                                                           |                     ---: |
+| [Stack](https://github.com/chadwpry/algorithm-practices/blob/main/stack.go)                                    | make test-stack          |
 
 
 # Expected setup
