@@ -1,3 +1,5 @@
+.PHONY: usage all
+
 usage:
 	@echo The following algorithm practice challenges are available. After
 	@echo adding an implementation for the challenge, execute the associated test
@@ -47,18 +49,8 @@ usage:
 
 all: test-reverse-string test-sorts test-stack
 
-test-countingsort:
-	@echo executing countingsort tests
-	@go test -v countingsort_test.go countingsort.go
 
-test-heapsort:
-	@echo executing heapsort tests
-	@go test -v heapsort_test.go heapsort.go
-
-test-insertionsort:
-	@echo executing insertionsort tests
-	@go test -v insertionsort_test.go insertionsort.go
-
+# Leetcode
 test-leetcode-00007:
 	@echo executing leetcode 00007 reverse integer
 	@go test -v lc/00007_reverse_integer_test.go lc/00007_reverse_integer.go
@@ -91,25 +83,41 @@ test-leetcode-00605:
 	@echo executing leetcode 00605 can place flowers tests
 	@go test -v lc/00605_can_place_flowers_test.go lc/00605_can_place_flowers.go
 
+
+# Sorts
+test-sorts:
+	@echo executing sort tests
+	@go test -v sorts/countingsort_test.go sorts/countingsort.go \
+		sorts/heapsort_test.go sorts/heapsort.go \
+		sorts/insertionsort_test.go sorts/insertionsort.go \
+		sorts/mergesort_test.go sorts/mergesort.go \
+		sorts/quicksort_test.go sorts/quicksort.go
+
+test-countingsort:
+	@echo executing countingsort tests
+	@go test -v sorts/countingsort_test.go sorts/countingsort.go
+
+test-heapsort:
+	@echo executing heapsort tests
+	@go test -v sorts/heapsort_test.go sorts/heapsort.go
+
+test-insertionsort:
+	@echo executing insertionsort tests
+	@go test -v sorts/insertionsort_test.go sorts/insertionsort.go
+
 test-mergesort:
 	@echo executing mergesort tests
-	@go test -v mergesort_test.go mergesort.go
+	@go test -v sorts/mergesort_test.go sorts/mergesort.go
 
 test-quicksort:
 	@echo executing quicksort tests
-	@go test -v quicksort_test.go quicksort.go
+	@go test -v sorts/quicksort_test.go sorts/quicksort.go
 
+
+# Extra
 test-reverse-string:
 	@echo executing reverse string tests
 	@go test -v reverse_string_test.go reverse_string.go
-
-test-sorts:
-	@echo executing sort tests
-	@go test -v countingsort_test.go countingsort.go \
-		heapsort_test.go heapsort.go \
-		insertionsort_test.go insertionsort.go \
-		mergesort_test.go mergesort.go \
-		quicksort_test.go quicksort.go
 
 test-stack:
 	@echo executing stack tests
