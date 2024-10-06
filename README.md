@@ -30,7 +30,7 @@ Run tests for reverse algorithm practices.
 
 | Practice                                                                                                       | Test Command             |
 | :---                                                                                                           |                     ---: |
-| [Reverse String](https://github.com/chadwpry/algorithm-practices/blob/main/reverse_string.go)                  | make test-reverse-string |
+| [Reverse String](https://github.com/chadwpry/algorithm-practices/blob/main/strings/reverse_string.go)          | make test-reverse-string |
 
 
 ## Sorts
@@ -56,7 +56,7 @@ Run tests for stack algorithm practices.
 
 | Practice                                                                                                       | Test Command             |
 | :---                                                                                                           |                     ---: |
-| [Stack](https://github.com/chadwpry/algorithm-practices/blob/main/stack.go)                                    | make test-stack          |
+| [Stack](https://github.com/chadwpry/algorithm-practices/blob/main/stacks/stack.go)                             | make test-stack          |
 
 
 # Expected setup
