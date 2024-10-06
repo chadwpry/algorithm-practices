@@ -49,6 +49,17 @@ usage:
 
 all: test-reverse-string test-sorts test-stack
 
+test-countingsort:
+	@echo executing countingsort tests
+	@go test -v sorts/countingsort_test.go sorts/countingsort.go
+
+test-heapsort:
+	@echo executing heapsort tests
+	@go test -v sorts/heapsort_test.go sorts/heapsort.go
+
+test-insertionsort:
+	@echo executing insertionsort tests
+	@go test -v sorts/insertionsort_test.go sorts/insertionsort.go
 
 # Leetcode
 test-leetcode-00007:
@@ -117,8 +128,8 @@ test-quicksort:
 # Extra
 test-reverse-string:
 	@echo executing reverse string tests
-	@go test -v reverse_string_test.go reverse_string.go
+	@go test -v strings/reverse_string_test.go strings/reverse_string.go
 
 test-stack:
 	@echo executing stack tests
-	@go test -v stack_test.go stack.go
+	@go test -v stacks/stack_test.go stacks/stack.go
