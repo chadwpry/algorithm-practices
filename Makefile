@@ -104,26 +104,6 @@ test-sorts:
 		sorts/mergesort_test.go sorts/mergesort.go \
 		sorts/quicksort_test.go sorts/quicksort.go
 
-test-countingsort:
-	@echo executing countingsort tests
-	@go test -v sorts/countingsort_test.go sorts/countingsort.go
-
-test-heapsort:
-	@echo executing heapsort tests
-	@go test -v sorts/heapsort_test.go sorts/heapsort.go
-
-test-insertionsort:
-	@echo executing insertionsort tests
-	@go test -v sorts/insertionsort_test.go sorts/insertionsort.go
-
-test-mergesort:
-	@echo executing mergesort tests
-	@go test -v sorts/mergesort_test.go sorts/mergesort.go
-
-test-quicksort:
-	@echo executing quicksort tests
-	@go test -v sorts/quicksort_test.go sorts/quicksort.go
-
 
 # Extra
 test-reverse-string:
